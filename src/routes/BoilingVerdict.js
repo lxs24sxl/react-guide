@@ -8,12 +8,11 @@ export default class BoilingVerdict extends React.Component {
 
   render() {
     const celsius = this.props.celsius;
-    return (
-      {
-        celsius >= 100? 
-          <p> The water would boil.</p>: 
-          <p>The water would not boil.</p>
+    
+      if (celsius >= 100 ){
+        return <p> The water would boil.</p>
+      } else {
+        return <p>The water would not boil.</p>
       }
-    );
   }
 }

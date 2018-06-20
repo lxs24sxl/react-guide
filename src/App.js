@@ -11,6 +11,7 @@ import NameForm from './routes/NameForm';
 import EssayForm from './routes/EssayForm';
 import FlavorForm from './routes/FlavorForm';
 import Reservation from './routes/Reservation';
+import Calculator from './routes/Calculator';
 // eslint-disable-next-line
 function formatName( user ) {
   return user.firstName + ' ' + user.lastName;
@@ -181,6 +182,7 @@ class App extends Component {
         <EssayForm></EssayForm>
         <FlavorForm></FlavorForm>
         <Reservation></Reservation>
+        <Calculator></Calculator>
       </div>
 
     );
