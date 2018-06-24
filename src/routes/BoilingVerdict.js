@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class BoilingVerdict extends React.Component {
+export default class BoilingVerdict extends React.PureComponent {
   constructor( props ) {
     super( props );
 

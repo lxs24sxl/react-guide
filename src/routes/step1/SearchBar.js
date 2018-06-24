@@ -26,12 +26,14 @@ function NumberDescriber( props ) {
 }
 
 export default class SearchBar extends React.Component {
+
   constructor( props ) {
     super( props );
     this.state = {
       // value: '',
       // isShowStock: false
-    }
+    };
+    this.textInput = null;
     this.handleInputChange = this.handleInputChange.bind( this );
   }
 
@@ -41,16 +43,23 @@ export default class SearchBar extends React.Component {
 
   handleInputChange( e ) {
     this.props.handleChange( e );
+    // console.log( this.input.value );
+  }
+
+  componentDidMount() {
+    console.log( this.refs.checkbox );
   }
 
   render() {
     console.log( "this.props.name",this.props.name );
-    const valueInputProps = { name: "value", value: this.props.value, onChange: this.handleChange };
+    
+    const valueInputProps = { ref: (input) => {this.textInput = input;}, name: "value", value: this.props.value, onChange: this.handleChange };
     return (
       <div>
         <input {...valueInputProps}/>
         <br />
         <input
+          ref="checkbox"
           name="isShowStock"
           type="checkbox"
           checked={this.props.isShowStock}
