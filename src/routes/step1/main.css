@@ -1,0 +1,31 @@
+.filter-wrapper {
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid grey;
+}
+.product-table-wrapper {
+  width: 300px;
+  /*background-color: #eee;*/
+  border: 1px solid #eee;
+}
+.title {
+  text-align: left;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  list-style-type: none;
+  text-align: left;
+}
+.product-table-wrapper ul li {
+  float: left;
+  margin-left: 30px;
+}
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+.clearfix::after {
+  clear: both;
+}

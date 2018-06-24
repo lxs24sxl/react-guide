@@ -92,6 +92,7 @@
     "extends": "react-app"
   },
   "devDependencies": {
-    "babel-loader": "^7.1.2"
+    "babel-loader": "^7.1.2",
+    "prop-types": "^15.6.2"
   }
 }

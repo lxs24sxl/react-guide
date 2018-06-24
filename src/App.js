@@ -12,6 +12,9 @@ import EssayForm from './routes/EssayForm';
 import FlavorForm from './routes/FlavorForm';
 import Reservation from './routes/Reservation';
 import Calculator from './routes/Calculator';
+import SplitPane from './routes/SplitPane';
+import SignUpDialog from './routes/SignUpDialog';
+import FilterableProductTable from './routes/step1/FilterableProductTable';
 // eslint-disable-next-line
 function formatName( user ) {
   return user.firstName + ' ' + user.lastName;
@@ -183,6 +186,9 @@ class App extends Component {
         <FlavorForm></FlavorForm>
         <Reservation></Reservation>
         <Calculator></Calculator>
+        <SplitPane left={<text>左邊</text>} right={<text>右邊</text>}> </SplitPane>
+        <SignUpDialog></SignUpDialog>
+        <FilterableProductTable></FilterableProductTable>
       </div>
 
     );
